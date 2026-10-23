@@ -1,0 +1,340 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>When Breath Becomes Air — Andi Guan</title>
+
+  <meta
+    name="description"
+    content="A personal reflection on When Breath Becomes Air by Paul Kalanithi, and what it means to live a meaningful life."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .essay-page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 72px 24px 100px;
+    }
+
+    .essay-back {
+      display: inline-block;
+      margin-bottom: 48px;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .essay-category {
+      margin-bottom: 18px;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.65;
+    }
+
+    .essay-title {
+      margin: 0 0 22px;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2.6rem, 7vw, 4.5rem);
+      font-weight: 400;
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+
+    .essay-subtitle {
+      max-width: 620px;
+      margin-bottom: 28px;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+
+    .essay-meta {
+      margin-bottom: 52px;
+      font-size: 0.85rem;
+      opacity: 0.65;
+    }
+
+    .essay-divider {
+      width: 48px;
+      margin: 0 0 42px;
+      border: 0;
+      border-top: 1px solid currentColor;
+      opacity: 0.45;
+    }
+
+    .essay-body {
+      font-size: 1.05rem;
+      line-height: 1.95;
+    }
+
+    .essay-body p {
+      margin: 0 0 28px;
+    }
+
+    .essay-body h2 {
+      margin: 52px 0 20px;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.3;
+    }
+
+    .essay-body blockquote {
+      margin: 40px 0;
+      padding-left: 24px;
+      border-left: 2px solid #b66b4b;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.35rem;
+      font-style: italic;
+      line-height: 1.65;
+    }
+
+    .essay-note {
+      margin-top: 52px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(80, 70, 60, 0.2);
+      font-size: 0.9rem;
+      line-height: 1.8;
+      opacity: 0.75;
+    }
+
+    .essay-footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(80, 70, 60, 0.2);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+
+    .essay-footer a,
+    .essay-back {
+      color: inherit;
+    }
+
+    @media (max-width: 600px) {
+      .essay-page {
+        padding: 44px 22px 72px;
+      }
+
+      .essay-back {
+        margin-bottom: 36px;
+      }
+
+      .essay-body {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">ANDI GUAN</a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html#writing">Writing</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="essay-page">
+    <a class="essay-back" href="index.html#writing">
+      ← Back to writing
+    </a>
+
+    <article>
+      <p class="essay-category">Books &amp; Reflections</p>
+
+      <h1 class="essay-title">When Breath Becomes Air</h1>
+
+      <p class="essay-subtitle">
+        On mortality, meaning, and the difficult question of what makes a life well lived.
+      </p>
+
+      <p class="essay-meta">
+        A personal reflection on Paul Kalanithi’s memoir
+      </p>
+
+      <hr class="essay-divider" />
+
+      <div class="essay-body">
+        <p>
+          Some books leave you with answers. Others leave you with questions
+          that follow you long after you have turned the final page.
+          <em>When Breath Becomes Air</em> belongs to the second kind.
+        </p>
+
+        <p>
+          Written by Paul Kalanithi, a neurosurgeon diagnosed with terminal
+          lung cancer, the memoir explores a question that feels both simple
+          and impossible to answer: how should we live when we know that our
+          time is limited?
+        </p>
+
+        <p>
+          What makes the book so moving is the way Kalanithi approaches this
+          question from two sides. For much of his life, he studies death as
+          a physician, encountering it through the lives of his patients.
+          Then, suddenly, he must confront it as a patient himself. The
+          distance between the person who treats an illness and the person
+          who lives with it disappears.
+        </p>
+
+        <h2>When the future changes shape</h2>
+
+        <p>
+          We often organize our lives around the assumption that there will
+          be more time. There will be another opportunity to change direction,
+          another year to become the person we hope to be, another chance to
+          say what we have been meaning to say.
+        </p>
+
+        <p>
+          A serious illness disrupts that assumption. The future stops feeling
+          like an endless landscape and becomes something uncertain and
+          immediate. Plans that once seemed permanent may suddenly need to
+          be reconsidered.
+        </p>
+
+        <p>
+          Reading Kalanithi’s story made me think about how easily I confuse
+          having time with knowing what to do with it. I can spend so much
+          energy preparing for a future version of my life that I forget to
+          pay attention to the one I am actually living.
+        </p>
+
+        <blockquote>
+          Perhaps the question is not simply how much time we have, but what
+          we choose to give our time to.
+        </blockquote>
+
+        <p>
+          This is not to say that every moment needs to be productive or
+          extraordinary. A meaningful life does not have to be made up of
+          constant achievements. Sometimes meaning is found in ordinary
+          routines, in showing up for someone, in paying attention, or in
+          allowing ourselves to be fully present.
+        </p>
+
+        <h2>The limits of achievement</h2>
+
+        <p>
+          Kalanithi was a person who had devoted years to becoming a skilled
+          physician. His work required discipline, intelligence, and a
+          willingness to spend much of his life preparing for a future goal.
+          His diagnosis forced him to reconsider what those goals meant.
+        </p>
+
+        <p>
+          I found myself thinking about the ways we measure a successful
+          life. We often look at visible milestones: a degree, a career, a
+          finished project, a place we have reached. These things can be
+          meaningful, but they cannot answer every important question.
+        </p>
+
+        <p>
+          What kind of person are we becoming while we pursue them? What
+          relationships are we nurturing? Are we building a life that feels
+          meaningful from the inside, or one that simply looks convincing
+          from the outside?
+        </p>
+
+        <p>
+          These questions do not make ambition less valuable. They make it
+          more personal. They remind me that achievement is only one part of
+          a life, not a substitute for living it.
+        </p>
+
+        <h2>Living with uncertainty</h2>
+
+        <p>
+          One of the hardest things about being human is that we rarely get
+          complete certainty before we have to make our choices. We decide
+          what matters without knowing exactly how things will unfold. We
+          love people knowing that circumstances can change. We make plans
+          without any guarantee that the future will cooperate.
+        </p>
+
+        <p>
+          It is tempting to wait until life feels more settled before taking
+          something seriously: a relationship, a creative idea, a difficult
+          conversation, or a change we have been considering for years.
+          But certainty is not always something we can wait for.
+        </p>
+
+        <p>
+          Kalanithi’s story is a reminder that uncertainty is not an
+          interruption to life. It has always been part of it, even when we
+          are fortunate enough not to notice.
+        </p>
+
+        <p>
+          We cannot control every circumstance, and we cannot always know
+          which decisions will matter most in retrospect. We can, however,
+          pay attention to the values that guide our choices and the people
+          with whom we share our limited time.
+        </p>
+
+        <h2>What remains</h2>
+
+        <p>
+          I do not think a book like this needs to offer a neat lesson.
+          Mortality is too personal, and grief is too complicated, for a
+          single conclusion to explain them away.
+        </p>
+
+        <p>
+          Instead, I take away a quieter reminder: that a meaningful life
+          is not necessarily a perfect one, a long one, or one that follows
+          the plan we imagined. It is a life in which we keep asking what
+          matters, and try to bring our actions closer to our answers.
+        </p>
+
+        <p>
+          We may not be able to choose how much time we are given. But we
+          can reflect on how we spend it, what we pay attention to, and
+          how we care for the people who make our lives what they are.
+        </p>
+
+        <p>
+          Perhaps that is enough to begin with—not a final answer, but a
+          more honest question to carry into the days ahead.
+        </p>
+      </div>
+
+      <p class="essay-note">
+        <strong>About the book:</strong> <em>When Breath Becomes Air</em>
+        is a memoir by Paul Kalanithi, a neurosurgeon who reflects on life,
+        illness, and mortality after being diagnosed with terminal cancer.
+        This essay is a personal reflection on the book’s themes, not an
+        excerpt from the original work.
+      </p>
+    </article>
+
+    <footer class="essay-footer">
+      <a href="index.html#writing">← All writing</a>
+      <a href="mailto:andiguan.sf@gmail.com">Get in touch ↗</a>
+    </footer>
+  </main>
+</body>
+</html>
+```
