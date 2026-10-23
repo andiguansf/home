@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +8,11 @@
   <title>Andi Guan — Writing & Ideas</title>
   <meta
     name="description"
-    content="Andi Guan — writing about ideas, technology, people, and life."
+    content="Andi Guan — writing about art, health, people, and life."
   />
 
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Optional: elegant serif + clean sans-serif -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -22,22 +21,21 @@
   />
 </head>
 
-<body>
+<body id="top">
 
   <!-- ==================== NAVIGATION ==================== -->
 
   <header class="site-header">
     <div class="container nav-container">
 
-      <a href="/" class="logo">
+      <a href="#top" class="logo">
         ANDI GUAN
       </a>
 
       <nav class="navigation" aria-label="Main navigation">
-  <a href="health.html">Health</a>
-  <a href="art.html">Art</a>
-  <a href="life.html">Life</a>
-</nav>
+        <a href="#writing">Writing</a>
+        <a href="#about">About</a>
+      </nav>
 
     </div>
   </header>
@@ -78,11 +76,8 @@
         <div class="section-heading">
           <p class="eyebrow">WRITING</p>
 
-          <h2>
-            Recent thoughts
-          </h2>
+          <h2>Recent thoughts</h2>
         </div>
-
 
         <div class="post-list">
 
@@ -119,7 +114,7 @@
           <article class="post">
             <div class="post-meta">
               <time datetime="2026-09-21">SEP 21, 2026</time>
-              <span class="post-category">TECHNOLOGY</span>
+              <span class="post-category">HEALTH & WELLBEING</span>
             </div>
 
             <div class="post-content">
@@ -171,10 +166,9 @@
 
         </div>
 
-
         <div class="all-writing">
-          <a href="#" class="outline-button">
-            View all writing
+          <a href="#writing" class="outline-button">
+            Explore writing
             <span>↗</span>
           </a>
         </div>
@@ -197,7 +191,6 @@
           </h2>
         </div>
 
-
         <div class="about-content">
 
           <p class="about-intro">
@@ -205,15 +198,15 @@
           </p>
 
           <p>
-            I'm interested in the intersection of technology,
-            culture, creativity, and the people who make
-            interesting things happen.
+            I'm interested in art, mental and physical health,
+            creativity, and the small things that make life
+            meaningful.
           </p>
 
           <p>
             This is my little corner of the internet — a place
-            for essays, observations, projects, and ideas
-            that don't fit neatly anywhere else.
+            for essays, observations, personal reflections,
+            and ideas that don't fit neatly anywhere else.
           </p>
 
           <p>
@@ -240,9 +233,7 @@
         </p>
 
         <div class="footer-links">
-          <a href="mailto:hello@example.com">Email</a>
-          <a href="#" target="_blank" rel="noopener">GitHub</a>
-          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:andiguan.sf@gmail.com">Email</a>
         </div>
 
       </div>
@@ -251,10 +242,9 @@
   </main>
 
 
-  <!-- ==================== SMALL INTERACTION ==================== -->
+  <!-- ==================== SMOOTH SCROLLING ==================== -->
 
   <script>
-    // Smooth scrolling for internal links
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener("click", function (event) {
         const target = document.querySelector(this.getAttribute("href"));
