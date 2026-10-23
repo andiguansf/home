@@ -1,266 +1,201 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Andi Guan — Writing & Ideas</title>
+  <title>Andi Guan — Writing &amp; Ideas</title>
   <meta
     name="description"
-    content="Andi Guan — writing about art, health, people, and life."
+    content="Andi Guan — writing about ideas, technology, people, and life."
   />
-
-  <link rel="stylesheet" href="css/style.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
     rel="stylesheet"
   />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .post-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .post-title a:hover {
+      color: #b66b4b;
+    }
+
+    .read-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: inherit;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .read-link:hover {
+      color: #b66b4b;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .hero {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+    }
+
+    .post-meta {
+      margin-bottom: 12px;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.65;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding-top: 68px;
+        padding-bottom: 68px;
+      }
+    }
+  </style>
 </head>
 
-<body id="top">
-
-  <!-- ==================== NAVIGATION ==================== -->
-
+<body>
   <header class="site-header">
     <div class="container nav-container">
+      <a href="index.html" class="logo">ANDI GUAN</a>
 
-      <a href="#top" class="logo">
-        ANDI GUAN
-      </a>
-
-      <nav class="navigation" aria-label="Main navigation">
+      <nav aria-label="Main navigation">
         <a href="#writing">Writing</a>
         <a href="#about">About</a>
       </nav>
-
     </div>
   </header>
 
-
   <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <p class="eyebrow">WRITING &amp; IDEAS</p>
 
-    <!-- ==================== HERO ==================== -->
+      <h1>The glimmers in life.</h1>
 
-    <section class="hero">
-      <div class="container hero-container">
+      <p class="hero-description">
+        Notes on the things that make us think, feel, and see the world
+        a little differently.
+      </p>
 
-        <p class="eyebrow">WELCOME</p>
-
-        <h1>
-          The glimmers in <em>life.</em>
-        </h1>
-
-        <p class="hero-description">
-          I write about art, health (mental and physical),
-          and the things that inspire me along the way.
-        </p>
-
-        <a href="#writing" class="scroll-link">
-          <span>Explore</span>
-          <span class="arrow">↓</span>
-        </a>
-
-      </div>
+      <a href="#writing" class="text-link">Explore my writing ↓</a>
     </section>
 
+    <!-- Writing -->
+    <section id="writing" class="writing-section container">
+      <div class="section-heading">
+        <p class="eyebrow">THE JOURNAL</p>
+        <h2>Recent writing</h2>
+      </div>
 
-    <!-- ==================== WRITING ==================== -->
+      <div class="post-grid">
+        <!-- Featured essay -->
+        <article class="post-card">
+          <p class="post-meta">BOOKS &amp; REFLECTIONS</p>
 
-    <section class="writing-section" id="writing">
-      <div class="container">
+          <h3 class="post-title">
+            <a href="when-breath-becomes-air.html">
+              When Breath Becomes Air
+            </a>
+          </h3>
 
-        <div class="section-heading">
-          <p class="eyebrow">WRITING</p>
+          <p class="post-description">
+            On mortality, meaning, and the difficult question of what makes
+            a life well lived. A personal reflection on Paul Kalanithi’s memoir.
+          </p>
 
-          <h2>Recent thoughts</h2>
-        </div>
-
-        <div class="post-list">
-
-          <!-- POST 1 -->
-
-          <article class="post">
-            <div class="post-meta">
-              <time datetime="2026-10-05">OCT 05, 2026</time>
-              <span class="post-category">THOUGHTS</span>
-            </div>
-
-            <div class="post-content">
-              <h3>
-                <a href="#">
-                  On building things that matter
-                </a>
-              </h3>
-
-              <p>
-                A few thoughts on making things, finding
-                meaning in the process, and deciding what
-                is worth building.
-              </p>
-
-              <a href="#" class="read-more">
-                Read essay <span>→</span>
-              </a>
-            </div>
-          </article>
-
-
-          <!-- POST 2 -->
-
-          <article class="post">
-            <div class="post-meta">
-              <time datetime="2026-09-21">SEP 21, 2026</time>
-              <span class="post-category">HEALTH & WELLBEING</span>
-            </div>
-
-            <div class="post-content">
-              <h3>
-                <a href="#">
-                  What technology gets wrong about people
-                </a>
-              </h3>
-
-              <p>
-                Technology is exceptionally good at solving
-                problems. But sometimes we forget to ask
-                whether the problem matters.
-              </p>
-
-              <a href="#" class="read-more">
-                Read essay <span>→</span>
-              </a>
-            </div>
-          </article>
-
-
-          <!-- POST 3 -->
-
-          <article class="post">
-            <div class="post-meta">
-              <time datetime="2026-08-14">AUG 14, 2026</time>
-              <span class="post-category">LIFE</span>
-            </div>
-
-            <div class="post-content">
-              <h3>
-                <a href="#">
-                  Learning to pay attention
-                </a>
-              </h3>
-
-              <p>
-                In a world competing for our attention,
-                perhaps the most radical thing we can do
-                is simply notice what is around us.
-              </p>
-
-              <a href="#" class="read-more">
-                Read essay <span>→</span>
-              </a>
-            </div>
-          </article>
-
-        </div>
-
-        <div class="all-writing">
-          <a href="#writing" class="outline-button">
-            Explore writing
-            <span>↗</span>
+          <a
+            href="when-breath-becomes-air.html"
+            class="read-link"
+            aria-label="Read When Breath Becomes Air"
+          >
+            Read essay ↗
           </a>
-        </div>
+        </article>
 
+        <!-- Second post -->
+        <article class="post-card">
+          <p class="post-meta">IDEAS</p>
+
+          <h3 class="post-title">
+            The art of paying attention
+          </h3>
+
+          <p class="post-description">
+            In a world that constantly asks for our attention, perhaps the
+            most meaningful thing we can do is decide where it goes.
+          </p>
+        </article>
+
+        <!-- Third post -->
+        <article class="post-card">
+          <p class="post-meta">LIFE</p>
+
+          <h3 class="post-title">
+            Becoming, slowly
+          </h3>
+
+          <p class="post-description">
+            On growing into yourself, changing your mind, and learning to
+            appreciate the unfinished parts of life.
+          </p>
+        </article>
       </div>
     </section>
 
+    <!-- About -->
+    <section id="about" class="about-section">
+      <div class="container about-content">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
 
-    <!-- ==================== ABOUT ==================== -->
-
-    <section class="about-section" id="about">
-      <div class="container about-grid">
-
-        <div class="about-heading">
-          <p class="eyebrow">ABOUT</p>
-
-          <h2>
-            A little bit<br />
-            about <em>me.</em>
-          </h2>
-        </div>
-
-        <div class="about-content">
-
-          <p class="about-intro">
-            Hi, I'm Andi.
-          </p>
-
-          <p>
-            I'm interested in art, mental and physical health,
-            creativity, and the small things that make life
-            meaningful.
-          </p>
-
-          <p>
-            This is my little corner of the internet — a place
-            for essays, observations, personal reflections,
-            and ideas that don't fit neatly anywhere else.
-          </p>
-
-          <p>
-            I'm based in the San Francisco Bay Area.
-          </p>
-
-          <a href="mailto:hello@example.com" class="text-link">
-            Say hello <span>→</span>
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ==================== FOOTER ==================== -->
-
-    <footer class="site-footer">
-      <div class="container footer-container">
+        <h2>Hello, I'm Andi.</h2>
 
         <p>
-          © 2026 Andi Guan
+          This is a space for the ideas I keep returning to, the books that
+          stay with me, and the small observations that make ordinary life
+          feel a little more interesting.
         </p>
 
-        <div class="footer-links">
-          <a href="mailto:andiguan.sf@gmail.com">Email</a>
-        </div>
+        <p>
+          I'm interested in how we think, how we live, and how we make sense
+          of the world around us. This blog is a place to explore those
+          questions, one note at a time.
+        </p>
 
+        <a href="mailto:andiguan.sf@gmail.com" class="text-link">
+          Say hello ↗
+        </a>
       </div>
-    </footer>
-
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Andi Guan</p>
 
-  <!-- ==================== SMOOTH SCROLLING ==================== -->
-
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener("click", function (event) {
-        const target = document.querySelector(this.getAttribute("href"));
-
-        if (target) {
-          event.preventDefault();
-
-          target.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
-        }
-      });
-    });
-  </script>
-
+      <a href="mailto:andiguan.sf@gmail.com">
+        andiguan.sf@gmail.com
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
-```
+```</
