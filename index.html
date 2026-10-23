@@ -19,95 +19,39 @@
   />
 
   <link rel="stylesheet" href="css/style.css" />
-
-  <style>
-    .post-title a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .post-title a:hover {
-      color: #b66b4b;
-    }
-
-    .read-link {
-      display: inline-block;
-      margin-top: 12px;
-      color: inherit;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-
-    .read-link:hover {
-      color: #b66b4b;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .hero {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-
-    .hero h1 {
-      max-width: 850px;
-    }
-
-    .post-meta {
-      margin-bottom: 12px;
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      opacity: 0.65;
-    }
-
-    @media (max-width: 600px) {
-      .hero {
-        padding-top: 68px;
-        padding-bottom: 68px;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <header class="site-header">
     <div class="container nav-container">
-      <a href="index.html" class="logo">ANDI GUAN</a>
+      <a href="#top" class="logo">ANDI GUAN</a>
 
-      <nav aria-label="Main navigation">
+      <nav>
         <a href="#writing">Writing</a>
         <a href="#about">About</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- Hero -->
+  <main id="top">
     <section class="hero container">
       <p class="eyebrow">WRITING &amp; IDEAS</p>
 
       <h1>The glimmers in life.</h1>
 
       <p class="hero-description">
-        Notes on the things that make us think, feel, and see the world
-        a little differently.
+        Thoughts on art, mental and physical health, and the little things
+        that make life meaningful.
       </p>
-
-      <a href="#writing" class="text-link">Explore my writing ↓</a>
     </section>
 
-    <!-- Writing -->
     <section id="writing" class="writing-section container">
       <div class="section-heading">
-        <p class="eyebrow">THE JOURNAL</p>
+        <p class="eyebrow">A COLLECTION OF THOUGHTS</p>
         <h2>Recent writing</h2>
       </div>
 
       <div class="post-grid">
-        <!-- Featured essay -->
         <article class="post-card">
           <p class="post-meta">BOOKS &amp; REFLECTIONS</p>
 
@@ -118,34 +62,31 @@
           </h3>
 
           <p class="post-description">
-            On mortality, meaning, and the difficult question of what makes
-            a life well lived. A personal reflection on Paul Kalanithi’s memoir.
+            A reflection on mortality, meaning, and what it means to live
+            a life that feels truly our own.
           </p>
 
           <a
             href="when-breath-becomes-air.html"
             class="read-link"
-            aria-label="Read When Breath Becomes Air"
           >
             Read essay ↗
           </a>
         </article>
 
-        <!-- Second post -->
         <article class="post-card">
-          <p class="post-meta">IDEAS</p>
+          <p class="post-meta">ART &amp; IDEAS</p>
 
           <h3 class="post-title">
             The art of paying attention
           </h3>
 
           <p class="post-description">
-            In a world that constantly asks for our attention, perhaps the
-            most meaningful thing we can do is decide where it goes.
+            On noticing the details we usually overlook, and finding
+            something extraordinary in ordinary moments.
           </p>
         </article>
 
-        <!-- Third post -->
         <article class="post-card">
           <p class="post-meta">LIFE</p>
 
@@ -154,34 +95,32 @@
           </h3>
 
           <p class="post-description">
-            On growing into yourself, changing your mind, and learning to
-            appreciate the unfinished parts of life.
+            Thoughts on growing, changing, and learning to appreciate
+            the person we are becoming.
           </p>
         </article>
       </div>
     </section>
 
-    <!-- About -->
     <section id="about" class="about-section">
       <div class="container about-content">
-        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <p class="eyebrow">ABOUT</p>
 
-        <h2>Hello, I'm Andi.</h2>
+        <h2>A space for curiosity.</h2>
 
         <p>
-          This is a space for the ideas I keep returning to, the books that
-          stay with me, and the small observations that make ordinary life
-          feel a little more interesting.
+          I'm Andi. This is a place for the ideas, experiences, and
+          observations that stay with me — from art and health to books,
+          people, and the small details of everyday life.
         </p>
 
         <p>
-          I'm interested in how we think, how we live, and how we make sense
-          of the world around us. This blog is a place to explore those
-          questions, one note at a time.
+          I write to understand things a little better, to make connections,
+          and to remember what matters.
         </p>
 
         <a href="mailto:andiguan.sf@gmail.com" class="text-link">
-          Say hello ↗
+          Get in touch ↗
         </a>
       </div>
     </section>
@@ -196,6 +135,22 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const target = document.querySelector(link.getAttribute("href"));
+
+        if (target) {
+          event.preventDefault();
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
-```</
+```
